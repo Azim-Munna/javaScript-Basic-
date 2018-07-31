@@ -1,0 +1,128 @@
+section.light_box_area {position: relative;background: #8a8181;height:  800px;display:none;}
+
+.light_box {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background:  #fff;
+    top: 76px;
+    left:  27%;
+}
+
+.l_content h3 {
+    font-size:  20px;
+    text-align: center;
+    padding:  35px;
+}
+button.hide_d {
+    position:  absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background:  #333;
+    color:  #fff;
+    border: none;
+    outline:  none;
+    border-radius: 4%;
+    right: 0;
+    top: 0%;
+    cursor: pointer;
+
+}
+section.image_area {
+    margin-top: 50px;
+    height: 800px;
+    background:  #333;
+    display: none;
+}
+.item {
+    width:  300px;
+    height: 300px;
+    margin:  45px;
+}
+
+.item_area {
+    background:  #333;
+    /* margin-top: 38px; */
+    position:  fixed;
+    top:  25%;
+    width: 400px;
+    height:  400px;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+}button.hide_i.hide_d {
+    display:  block;
+    left:  21px;
+}
+p {
+    /* color:  red; */
+}
+
+section.new_function {
+    text-align:  center;
+    background:  rebeccapurple;
+    color: #ffff;
+}
+
+section.new_function p {
+    color:  #Fff;
+    padding: 5px;
+}
+
+section.digital_clock_area h2 {
+    text-align:  center;
+    text-transform:  capitalize;
+    color:  #fff;
+    position:  relative;
+}
+
+section.digital_clock_area {
+    background: #544f4f;
+    height: 300px;
+    padding-top:  42px;
+}
+
+.digital_clock {
+    text-align:  center;
+    padding-top:  34px;
+    width: 271px;
+    height: 120px;
+    margin:  0 auto;
+    background:  #fff;
+    margin-top:  23px;
+    border-radius:  17px;
+    /* box-shadow: 20px 20px 0px 20px #ddd; */
+    box-shadow: 6px 10px 5px 0px rgb(167, 163, 167);
+}
+
+.digital_clock p {
+    /* width: 150px; */
+    /* height: 100px; */
+    /* background: #fff; */
+    font-size: 29px;
+    text-align:  center;
+    font-style:  italic;
+}
+
+
+p#match {
+    color:  red;
+}
+
+section.sting_mathod {
+    /* padding-bottom:  50px; */
+}
+
+section {
+}
+
+body section:last-child {
+    /* padding-bottom: 42px; */
+}
+
+section {margin-bottom: 40px;}
+
+h3#day_name {}

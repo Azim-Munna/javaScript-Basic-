@@ -1,0 +1,44 @@
+
+header {
+    text-align:  center;
+    padding: 25px 0;
+}
+
+.slider-section {
+    padding-top:  20px;
+    padding-bottom:  20px;
+    position: relative;
+}
+
+img {
+    min-width:  100%;
+    max-width:  100%;
+}
+
+.control {
+    position:  absolute;
+    top: 48%;
+    width: 100%;
+    /* height:  100%; */
+}
+
+.left_holder,.right_holder {
+    position:  absolute;
+    width: 50px;
+    height: 50px;
+    background:  red;
+    text-align:  center;
+    line-height: 50px;
+    border-radius:  50%;
+    right: 0;
+        color: #fff;
+    font-size: 27px;
+    cursor:pointer;
+}
+.right_holder{
+    left:0;
+}
+div#img_box img {
+    height: 450px;
+    width: 1117px;
+}

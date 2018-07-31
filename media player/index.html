@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calculator</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+	<p>Click the button to add a new element to the array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+    fruits.push("azim");
+    document.getElementById("demo").innerHTML = fruits;
+}
+
+// h2 2nd time 
+</script>
+<h2>2nd time</h2>
+<button onclick="newfunct()"> 2nd time </button>
+<p id="new_t"></p>
+<script>
+	var textss = ["azim", "munna","apple", "rifath"];
+	document.getElementById("new_t").innerHTML = textss;
+	function newfunct() {
+		textss.push("newtext");
+		document.getElementById("new_t").innerHTML = textss;
+		console.log(textss);
+	}
+	 var a = 10;
+	if(true){
+		var a=20
+		console.log(a); 
+	}
+	console.log(a);
+</script>
+<h2>media player</h2>
+
+
+<div id="media_player_section">
+	<div id="video_section">
+		<video src="assest/Sadher Nagor by Oyshee - Album Sadher Nagor - Official lyrical Video 2017.mp4" type="video/m4" id="my_video"></video>
+	</div>
+	<div id="frame">
+	
+</div>
+<div id="control_section">
+	<div id="bar">
+		<div class="fill" id="fill"></div>
+	</div>
+	<table border="1">
+		<tr>
+			<td width="55%">
+				<div id="current_Tim">00:00/00:00</div>
+			</td>
+			<td width="30%">
+				<div id="play">
+					<img src="assest/img/Play.png" alt="play" onclick="play0rpause()" id="playbtn">
+				</div>
+			</td>
+			<td><img src="assest/img/Speaker.png" alt="" id="speaker"></td>
+			<td><input type="range" min="0" max="1" value="0.40" step="0.20" id="range" onchange="changevolume()"/></td>
+		</tr>
+	</table>
+</div>
+	</div>
+	<!-- audio sectio -->
+
+	<h2 style="text-align:center;"> audio player</h2>
+	<div class="audio_player_section">
+		<div class="background_section" id="bg_i">
+			<img src="assest/img/n/bg.jpg" alt="">
+		</div>
+		<div class="control">
+			<div class="song_title" id="song_title">song title</div>
+			<div id="buttons">
+				
+				<button id="pre" onclick="pre()"><img src="assest/img/n/Pre.png" alt=""></button>
+				<button id="play_a" onclick="playorpause()"><img id="pl" src="assest/img/n/play.png" alt=""></button>
+				<button onclick="next()" id="next"><img src="assest/img/n/next.png" alt=""></button>
+			</div>
+			<div id="bar">
+				<div class="fill" id="fille"></div>
+			</div>
+			<div id="current_time">00:00/00:00</div>
+			<div class="voume">
+				<button class="icrease" id="increase" onclick="increase()">+</button>
+				<div class="spreaker">
+					<img src="assest/img/Speaker.png" alt="">
+				</div>
+				<button class="icrease" id="decrease" onclick="decrease()">-</button>
+			</div>
+		</div>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="assest/js/jquery.js"></script>
+	<script src="assest/js/script.js"></script>
+</body>
+</html> 

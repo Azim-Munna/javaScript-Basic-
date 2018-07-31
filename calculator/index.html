@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+		<h2 style="text-align: center;color:#333"> wellcome </h2>
+	</section>
+	<form action="get" name="calculator">
+		<input type="text" name="screen" disabled >
+		<br>
+		<input type="button" value="&radic;" class="common" onclick="calculator.screen.value = Math.sqrt(calculator.screen.value)">
+		<input type="button" class="common"  value="CE" onclick="calculator.screen.value = '' ">
+		<input type="button" class="common"  value="C" onclick="calculator.screen.value= '' ">
+		<input type="button" class="common" value="&larr;" onclick="calculator.screen.value = calculator.screen.value.slice(0,-1)"><br>
+		<input type="button" class="common" value="7" onclick="calculator.screen.value=calculator.screen.value + '7'">
+		<input type="button" class="common" value="8" onclick="calculator.screen.value+='8'">
+		<input type="button" class="common" value="9" onclick="calculator.screen.value+='9'">
+		<input type="button" class="common" value="+" onclick="calculator.screen.value+='+'"><br>
+		<input type="button" class="common" value="4" onclick="calculator.screen.value+='4'">
+		<input type="button" class="common" value="5" onclick="calculator.screen.value+='5'">
+		<input type="button" class="common" value="6" onclick="calculator.screen.value+='6'">
+		<input type="button" class="common" value="-" onclick="calculator.screen.value+='-'"><br>
+		<input type="button" class="common" value="1" onclick="calculator.screen.value+='1'">
+		<input type="button" class="common" value="2" onclick="calculator.screen.value+='2'">
+		<input type="button" class="common" value="3" onclick="calculator.screen.value+='3'">
+		<input type="button" class="common" value="*" onclick="calculator.screen.value+='*'"><br>
+		<input type="button" class="common" value="0" onclick="calculator.screen.value+='0'">
+		<input type="button" class="common" value="." onclick="calculator.screen.value+='.'">
+		<input type="button" class="common" value="=" onclick="calculator.screen.value = eval(calculator.screen.value)">
+		<input type="button" class="common" value="/" onclick="calculator.screen.value+='/'">
+	</form>
+	<script src="assest/js/script.js"></script>
+</body>
+</html>

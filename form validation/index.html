@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form validation </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- slider section -->
+    <header>
+        <h2 style="text-align: center;">Form validation </h2>
+    </header>
+    <!-- from area  -->
+    <script>
+    function form_validation() {
+        var y = document.forms["form_area"]["user_name"].value;
+        if (y == "") {
+            alert("enter your name please");
+            return false;
+        }
+    }
+    </script>
+    <section class="form-section">
+        <div class="container">
+            form validation
+            <form action="#" name="f_area" method="post" onsubmit="return from_val()">
+                <input type="text" placeholder="user name" name="f_name">
+                <br>
+                <input type="password" placeholder="password" name="f_pass">
+                <br>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </section>
+    <!-- browser validation -->
+    <section class="browser">
+        <div class="container">
+            <h3>browser validation</h3>
+            <form action="">
+                <input type="text" placeholder="username" name="f_name" required>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </section>
+    <!-- number validation  -->
+    <section class="number_val">
+        <div class="container">
+            <h3>number validation</h3>
+            <form action="#">
+                <input type="text" placeholder="enter a number" id="num">
+                <button type="submit" onclick="number_val()"> submit</button>
+            </form>
+            <h2 id="demo">enter a number withen 1-10</h2>
+        </div>
+    </section>
+    <!-- form api  -->
+    <section class="form_api">
+        <div class="container">
+            <h3>form api area </h3>
+            <form action="#">
+                <input type="number" id="num_id" min="100" max="300" required>
+                <button type="submit" onclick="show_res()">click</button>
+                <p id="res"></p>
+            </form>
+        </div>
+    </section>
+    <!-- form api 2nd w3 over folow-->
+    <section class="2nd_w3_form_api">
+        <div class="container">
+            <h3>w3 api 2nd </h3>
+            <from>
+                <input type="number" max="100" id="number_id">
+                <button type="submit" onclick="secnd_res()">click</button>
+            </from>
+            <h4 id="sec_d">enter a number withen or equal 100</h4>
+        </div>
+    </section>
+    <!-- under  under flow -->
+    <section class="under_area">
+        <div class="container">
+            <h3>rangeunder flow area </h3>
+            <from>
+                <input type="number" min="100" id="number_un_id">
+                <button type="submit" onclick="underflow()">click</button>
+            </from>
+            <h4 id="sec_under">enter a number withen or equal 100</h4>
+        </div>
+    </section>
+    <!-- from area  end-->
+    <!-- slider section -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="assest/js/script.js"></script>
+</body>
+
+</html>

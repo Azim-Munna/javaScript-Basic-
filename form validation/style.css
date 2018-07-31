@@ -1,0 +1,44 @@
+
+input[type="text"],input[type="password"] {
+    padding: 5px;
+    width:  250px;
+    /* height: 38px; */
+    font-size:  15px;
+    padding-left: 8px;
+    text-transform:  capitalize;
+}
+
+input[type="text"],input[type="password"]:focus {
+    outline:  none;
+}
+
+input[type="password"] {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    margin-top:  20px;
+}
+
+input[type="password"] {}
+
+section.number_val {
+    margin-top: 20px;
+}
+
+h2#demo {
+    margin-top:  11px;
+    text-transform:  capitalize;
+    font-size:  23px;
+}
+
+section h3 {
+    text-align:  center;
+    padding-bottom:  20px;
+}
+
+input#number_id {}
+
+input#number_id {
+    margin-bottom:  21px;
+}
